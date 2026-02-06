@@ -31,7 +31,7 @@ Wiring notes (summary):
 - MCP2515 CS -> GPIO5, SCK -> GPIO18, MISO -> GPIO19, MOSI -> GPIO23
 - SSD1306 I2C -> SDA/SCL (Wire), typically GPIO21 (SDA) and GPIO22 (SCL)
 - NeoPixel data -> GPIO15 (use a level shifter if required)
-- Rotary encoder -> CLK: GPIO32, DT: GPIO33, SW: GPIO25
+- Rotary encoder -> CLK/S1: GPIO32, DT/S2: GPIO33, SW/KEY: GPIO25
 
 If you prefer PlatformIO, place the sketch in `src/main.ino` and configure a project for `esp32dev`.
 
